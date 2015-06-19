@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="@string/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/botonMiReceiver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom Receiver"/>
+
+
+    <!-- Notar que se seteo:
+            fillViewport = true
+         y que el textView del contenido tiene
+            weight = 1.0
+         Esto ultimo hace que el textview ocupe todo el espacio disponible, pero solo
+         tiene sentido dentro de un scrollView cuando el mismo tiene seteado el
+         fillViewport. Por mas que pusieramos al textView matchParent, como el parent
+         es el scrollView, y su alto e variable, no tiene sentido.
+         Para ver esto en accion, prueben quitando esas dos lineas y con un texto mas chico que
+         la pantalla. Y vean q los botones aparece al final del texto. Si vuelve a agregar las
+         lineas que quitaron, los botones apareceran al final de la pantalla
+     -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dip"
+                android:paddingRight="8dip"
+                android:paddingTop="8dip"
+                android:text="ScrollView"
+                android:textAppearance="?android:attr/textAppearanceLarge" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:text="@string/longText"
+                android:textAppearance="?android:attr/textAppearanceLarge">
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/Button01"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.0"
+                    android:text="Doble Peso" >
+                </Button>
+
+                <Button
+                    android:id="@+id/Button02"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="MENOS PESO" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
