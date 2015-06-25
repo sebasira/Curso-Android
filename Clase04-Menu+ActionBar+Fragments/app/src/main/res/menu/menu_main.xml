@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.clase04_menucontextual.MainActivity" >
+
+	<!-- DEFINICION DE ITEMS DE MENU
+	Definir un item de menu, es similar a difinir una vista en un layout.
+	Requiere un ID que es la ID con la que lo vamos a matchear cuando se
+	seleccione un item de este menu
+	El orden en categoría es el orden dentro del menu
+	Puede llevar un título o un ícono, uno de los 2 es requerido. Tambien
+	pueden estar los 2.
+	Y para el MENU DE OPCIONES showAsAction debe ser NEVER, (esto lo vamos
+	a ver en el proximo ejemplo, esta relacionado con la ActionBar)
+	 -->
+    
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+
+</menu>

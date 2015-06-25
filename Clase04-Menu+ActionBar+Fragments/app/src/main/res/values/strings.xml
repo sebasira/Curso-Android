@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Clase 04</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_activity_action_bar">ActivityActionBar</string>
+</resources>

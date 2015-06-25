@@ -1,0 +1,59 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.actionbar_fragment.MainActivity" >
+
+    <!-- 
+    	Como le decía en MainActiviy, el mismo menu que usamos para el
+    	MENU DE OPCIONES, es el que define los iconos de la barra de 
+    	accion. La unica caracteristica que cambia es showAsAction, y
+    	sus posibles valores pueden ser:
+    	- never: Nunca mostrarlo en la barra de acciones, siempre en
+    			 el menu de opciones
+    	- always: Siempre mostrarlo en la barra de accion (si no entra
+    	          porque tienen muchos iconos, crea un icono de overflow)
+    	- ifRoom: Si hay lugar, en la barra de accion, Si no lo hay en 
+    			  el menu de opciones 
+   		- withText: Generamente se le agrega al alway: "always|withText" para
+   					que muestre el icono y al lado el texto. El texto SOLO
+   					lo muestra cuando el telefono esta apaisado (cuando lo
+   					rotamos) y solo se muestra si Android considera que hay
+   					lugar para mostrarlo (si tienen un texto muy largo, es
+   					probaable que no se los muestre)
+   					
+   		
+   		Vamos a poner 2 items en la actionBar (los vamos a usar para la
+   		navegacion por los fragments) y uno lo vamos a dejar en el menu
+   		para que vean que se trata del mismo menu solo cambia donde esta
+   		cada item
+     -->
+
+    <!-- SETTINGS: va a quedar en el menu -->
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+
+    <!-- FRAGMENT 1: en actionBar 
+    Yo agregue un drawable en la carpeta de hdpi (lo correcto seria tener uno
+    para cada densidad -->
+    <item
+        android:id="@+id/action_farg1"
+        android:orderInCategory="99"
+        android:title="Bueno"
+        android:icon="@drawable/good"
+        app:showAsAction="always"/>
+
+
+    <!-- FRAGMENT 2: en actionBar
+    Yo agregue un drawable en la carpeta de hdpi (lo correcto seria tener uno
+    para cada densidad -->
+    <item
+        android:id="@+id/action_farg2"
+        android:orderInCategory="101"
+        android:title="Malo"
+        android:icon="@drawable/bad"
+        app:showAsAction="always"/>
+
+</menu>
