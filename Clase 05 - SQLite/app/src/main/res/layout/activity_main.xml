@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	Simplemente vamos a tener un listView que es una vista que nos ayuda
+	a implementar una lista, sin mayores preocupaciones.
+	Tengan en cuenta que es para una lista BASICA donde solo va a haber
+	un unico TITULO por llamarlo de alguna manera.
+	Si quisiera agregar un subtitulo y o una imagen o un checkbox uds
+	tendrian que crear su propia lista.
+	Pueden googlear por "custom listview" para mas info
+
+	Noten que usamos la propiedad width=match_parent para que TODO EL RENGLON de
+	un item del listview sea clickable. Sino solo se puede hacer click
+	sobr el textview (titulo) del libro
+	
+ -->
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" /> 

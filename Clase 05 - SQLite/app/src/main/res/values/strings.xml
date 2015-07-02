@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">clase05_BD_sqlite</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="nuevo_libro">Nuevo Libro</string>
+    
+    <string name="id">ID</string>
+    <string name="titulo">Título</string>
+    <string name="descripcion">Descripción</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/sebas/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/home/sebas/trabajos/Clase 05/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-6321da77324c49b4df7b279988c4cf3623893461.jar" />
+    </item>
+    <item
+        jar="/home/sebas/trabajos/Clase 05/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/home/sebas/trabajos/Clase 05/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-47666ef16746c45623b05c2a60268647e56adc99.jar" />
+    </item>
+    <item
+        jar="/home/sebas/trabajos/Clase 05/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/home/sebas/trabajos/Clase 05/app/build/intermediates/pre-dexed/debug/classes-54a1b3b8e72175ec0f592db966565edd6d49c6b2.jar" />
+    </item>
+    <item
+        jar="/home/sebas/trabajos/Clase 05/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/home/sebas/trabajos/Clase 05/app/build/intermediates/pre-dexed/debug/classes-0279dbaac0b2a60f8c8b0cdb4644af04fc41626a.jar" />
+    </item>
+
+</items>
